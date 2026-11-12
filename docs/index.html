@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Department of Computer Science</h1>
+        <p>Welcome to the Student Portal Dashboard</p>
+    </header>
+
+    <!-- Form to Add Student Dynamically -->
+    <section class="form-section">
+        <h2>Add New Student</h2>
+        <form id="studentForm">
+            <div class="input-group">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" placeholder="e.g., S104" required>
+            </div>
+            <div class="input-group">
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" placeholder="e.g., Sarah Connor" required>
+            </div>
+            <div class="input-group">
+                <label for="studentYear">Year / Semester:</label>
+                <input type="text" id="studentYear" placeholder="e.g., 3rd Year" required>
+            </div>
+            <button type="submit" class="btn">Add Student</button>
+        </form>
+    </section>
+
+    <!-- Dynamic Table to Display Students -->
+    <section class="table-section">
+        <h2>Enrolled Students</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Year</th>
+            </tr>
+            </thead>
+            <tbody id="studentTableBody">
+            <tr>
+                <td>S101</td>
+                <td>Alice Smith</td>
+                <td>3rd Year</td>
+            </tr>
+            <tr>
+                <td>S102</td>
+                <td>Bob Jones</td>
+                <td>2nd Year</td>
+            </tr>
+            <tr>
+                <td>S103</td>
+                <td>Charlie Brown</td>
+                <td>4th Year</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
